@@ -154,3 +154,20 @@ input[type="button"] {
   bottom: 10px;
   left: 10px;
 }
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+    display: none;
+  }
+}

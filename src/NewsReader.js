@@ -138,6 +138,9 @@ export function NewsReader() {
   return (
     <div>
       <div className="main-container">
+        <div className="logo-container">
+      <img src="logo192.png" alt="Logo" className="logo" />
+      </div>
         <div className="login-box">
           <LoginForm
             login={login}
