@@ -57,44 +57,44 @@ color: black
   }
 }
 .login-box {
-  max-width: 200px; /* Set a maximum width for the login box */
-  margin: 20px; /* Add some margin for positioning in the top left */
+  max-width: 200px; 
+  margin: 20px; 
   padding: 10px;
-  border: 1px solid #ccc; /* Light border for visual distinction */
-  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: black/* Subtle shadow for depth */
+  background-color: black
 }
 
 li {
-  color: blue; /* Default color for non-selected items */
-  font-weight: normal; /* Default weight for non-selected items */
+  color: blue; 
+  font-weight: normal; 
 }
 .add-detail{
 
-    color: black; /* Default color for non-selected items */
-    font-weight: normal; /* Default weight for non-selected items */
+    color: black; 
+    font-weight: normal; 
 }
 .add-color{
 
-  color: darkolivegreen; /* Default color for non-selected items */
+  color: darkolivegreen; 
   font-weight: bold;
-  font-size: .95em; /* Default weight for non-selected items */
+  font-size: .95em; 
 }
 .add-border {
-  border: 2px solid black; /* Black border */
-  padding: 10px; /* Add some padding for space inside the border */
-  margin-top: 10px; /* Space above the bordered section */
-  border-radius: 5px; /* Optional: rounded corners for a softer look */
-  background-color: #f9f9f9; /* Optional: light background for contrast */
+  border: 2px solid black; 
+  padding: 10px; 
+  margin-top: 10px; 
+  border-radius: 5px; 
+  background-color: #f9f9f9; 
 }
 
 .main-container {
-  border: 2px solid black; /* Black border line */
-  background-color: black; /* Light gray background color */
-  padding: 20px; /* Padding inside the container */
-  margin: 20px; /* Margin around the container for separation */
-  border-radius: 10px; /* Optional: rounded corners for a softer look */
+  border: 2px solid black; 
+  background-color: black; 
+  padding: 20px; 
+  margin: 20px; 
+  border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
   justify-content: center;
   align-items: center;
@@ -119,8 +119,8 @@ li {
 }
 
 .important-button:active {
-  background-color: #ac2925; /* Even darker shade on active/click */
-  transform: translateY(0); /* Remove movement on click */
+  background-color: #ac2925; 
+  transform: translateY(0); 
 }
 
 
@@ -129,18 +129,18 @@ li {
 .form-group {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Space between form elements */
+  margin-bottom: 10px; 
 }
 
 .form-group label {
-  width: 100px; /* Fixed width for labels to align them */
-  margin-right: 10px; /* Space between label and input */
+  width: 100px; 
+  margin-right: 10px; 
 }
 
 .form-container {
   position: relative;
   min-height: 200px;
-  padding: 10px; /* Add padding around the form */
+  padding: 10px; 
 }
 
 .hidden {
