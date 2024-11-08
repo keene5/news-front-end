@@ -1,0 +1,156 @@
+ol{
+  font-size: small;
+}
+
+.scroll-container {
+  height: 400px; /* Adjust height as needed */
+  width: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd; /* Optional border for styling */
+}
+
+header,p{
+  font-weight:bold;
+}
+
+
+/* new stuff here */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.appfont{
+  font-weight: bold;
+  color: blue;
+}
+
+.box {
+  padding: 10px;
+  background-color: gold;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  background-color: black;
+}
+.delete {
+  display: block;
+  font-size: 1.0em;
+  margin-bottom: 10px;
+  background-color: white;
+color: black
+}
+
+@media (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.login-box {
+  max-width: 200px; /* Set a maximum width for the login box */
+  margin: 20px; /* Add some margin for positioning in the top left */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border for visual distinction */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: black/* Subtle shadow for depth */
+}
+
+li {
+  color: blue; /* Default color for non-selected items */
+  font-weight: normal; /* Default weight for non-selected items */
+}
+.add-detail{
+
+    color: black; /* Default color for non-selected items */
+    font-weight: normal; /* Default weight for non-selected items */
+}
+.add-color{
+
+  color: darkolivegreen; /* Default color for non-selected items */
+  font-weight: bold;
+  font-size: .95em; /* Default weight for non-selected items */
+}
+.add-border {
+  border: 2px solid black; /* Black border */
+  padding: 10px; /* Add some padding for space inside the border */
+  margin-top: 10px; /* Space above the bordered section */
+  border-radius: 5px; /* Optional: rounded corners for a softer look */
+  background-color: #f9f9f9; /* Optional: light background for contrast */
+}
+
+.main-container {
+  border: 2px solid black; /* Black border line */
+  background-color: black; /* Light gray background color */
+  padding: 20px; /* Padding inside the container */
+  margin: 20px; /* Margin around the container for separation */
+  border-radius: 10px; /* Optional: rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
+}
+
+.important-button {
+  background-color: #d9534f; /* Bootstrap's 'danger' red */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 5px; /* Reduced padding */
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+}
+
+.important-button:hover {
+  background-color: #c9302c; /* Darker shade on hover */
+  transform: translateY(-1px); /* Slight upward movement */
+}
+
+.important-button:active {
+  background-color: #ac2925; /* Even darker shade on active/click */
+  transform: translateY(0); /* Remove movement on click */
+}
+
+
+
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between form elements */
+}
+
+.form-group label {
+  width: 100px; /* Fixed width for labels to align them */
+  margin-right: 10px; /* Space between label and input */
+}
+
+.form-container {
+  position: relative;
+  min-height: 200px;
+  padding: 10px; /* Add padding around the form */
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+input[type="button"] {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
