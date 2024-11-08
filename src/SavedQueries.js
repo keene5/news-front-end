@@ -7,10 +7,10 @@ export function SavedQueries(params) {
     return params.savedQueries.map((item, idx) => {
       let trimTitle = item.queryName.substring(0, 30);
       return (
-        <li 
-          key={idx} 
-          onClick={() => onSavedQueryClick(item)} 
-          className={item.queryName === params.selectedQueryName ? "selected" : ""} 
+        <li
+          key={idx}
+          onClick={() => onSavedQueryClick(item)}
+          className={item.queryName === params.selectedQueryName ? "selected" : ""}
         >
           {`${trimTitle}: "${item.q}"`}
         </li>
@@ -19,11 +19,16 @@ export function SavedQueries(params) {
   };
 
   const handleDeleteAllQueries = async () => {
+    if (!params.currentUser) {
+      alert("You must login to delete queries.");
+      return;
+    }
+
     const confirmed = window.confirm("Are you sure you want to delete all queries?");
     if (!confirmed) {
       return;
     }
-    
+
     try {
       const response = await fetch("/api/deleteAllQueries", {
         method: "DELETE",
@@ -32,6 +37,7 @@ export function SavedQueries(params) {
         alert("All queries deleted successfully.");
         params.setSavedQueries([]); // Update saved queries
         params.setData({}); // Clear additional data if needed
+        params.setQuery([]); // Clear additional data if needed
       } else {
         alert("Failed to delete queries.");
       }
@@ -50,14 +56,16 @@ export function SavedQueries(params) {
         )}
       </ul>
 
-      <input
-        type="button"
-        value="Delete"
-        onClick={handleDeleteAllQueries}
-        title="Warning: This will delete all queries"
-        className="important-button"
-        style={{ position: 'absolute', bottom: '10px', left: '10px' }} // Positioning style
-      />
+      {params.currentUser && (
+        <input
+          type="button"
+          value="Delete"
+          onClick={handleDeleteAllQueries}
+          title="Warning: This will delete all queries"
+          className="important-button"
+          style={{ position: 'absolute', bottom: '10px', left: '10px' }} // Positioning style
+        />
+      )}
     </div>
   );
 }

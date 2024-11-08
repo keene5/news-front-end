@@ -57,7 +57,7 @@ export function QueryForm(params) {
               name="pageSize"
               min={1}
               max={100}
-              value={params.formObject.pageSize || 5}
+              value={params.formObject.pageSize || 1}
               onChange={handleChange}
             />
           </div>

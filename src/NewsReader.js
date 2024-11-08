@@ -7,8 +7,8 @@ import { LoginForm } from "./LoginForm";
 import "./App.css"; // Make sure to import your CSS
 
 export function NewsReader() {
-  const [query, setQuery] = useState(exampleQuery);
-  const [data, setData] = useState(exampleData);
+  const [query, setQuery] = useState({});
+  const [data, setData] = useState([]);
   const [queryFormObject, setQueryFormObject] = useState({});
   const urlNews = "/api/postNews";
   const urlQueries = "/api/getAllQueries";
@@ -168,6 +168,7 @@ export function NewsReader() {
               setSavedQueries={setSavedQueries}
               setData={setData}
               currentUser={currentUser}
+              setQuery={setQuery}
             />
           </div>
           <div className="box">
